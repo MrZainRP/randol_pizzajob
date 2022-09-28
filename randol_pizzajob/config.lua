@@ -1,16 +1,58 @@
 Config = {}
 
+-------------------
+--RANDOL_PIZZAJOB--
+-------------------
+
 Config.BossModel = "u_m_y_party_01"
 
-Config.Payment = 105 -- Per Delivery. Totals up and get paid when you return the vehicle.
+Config.NotifyType = 'okok'                                      -- Change to 'qb' for standard qb-core notifications or 'okok' for okokNotify notifications. 
 
-Config.BossCoords = vector4(538.35, 101.8, 95.54, 164.05) -- The Blip also uses these coords.
+Config.mzskills = true                                          -- Change to "false" to disable XP integration with mz-skills "Driving" XP.
+-- if "Config.mzskills = true", then the following parameters apply:
+Config.BonusChance = 100                                        -- Percentage chance for customer to give player a tip upon delivery.
+Config.DriverXPlow = 1                                          -- Lowest amount of "Driving" XP awarded to player for delivering pizza.
+Config.DriverXPhigh = 2                                         -- Highest amount of "Driving" XP awarded to player for delivering pizza.
+
+Config.PaymentLow = 105                                         -- Lowest amount paid per delivery. (Need to return the vehicle safely to the shop to get paid).
+Config.PaymentLow = 175                                         -- Highest amount paid per delivery. (Need to return the vehicle safely to the shop to get paid).
+
+--------------------
+--BONUS/TIP PAYOUT--
+--------------------
+
+--Level 1
+Config.Level1Low = 1                                            -- Lowest bonus amount at "Driving" XP level 1.
+Config.Level1High = 5                                           -- Highest bonus amount at "Driving" XP level 1.
+--Level 2   
+Config.Level2Low = 2                                            -- Lowest bonus amount at "Driving" XP level 2.
+Config.Level2High = 7                                           -- Highest bonus amount at "Driving" XP level 2.
+--Level 3
+Config.Level3Low = 4                                            -- Lowest bonus amount at "Driving" XP level 3.
+Config.Level3High = 10                                          -- Highest bonus amount at "Driving" XP level 3.
+--Level 4
+Config.Level4Low = 6                                            -- Lowest bonus amount at "Driving" XP level 4.
+Config.Level4High = 14                                          -- Highest bonus amount at "Driving" XP level 4.
+--Level 5
+Config.Level5Low = 9                                            -- Lowest bonus amount at "Driving" XP level 5.
+Config.Level5High = 17                                          -- Highest bonus amount at "Driving" XP level 5.
+--Level 6
+Config.Level6Low = 12                                           -- Lowest bonus amount at "Driving" XP level 6.
+Config.Level6High = 20                                          -- Highest bonus amount at "Driving" XP level 6.
+--Level 7
+Config.Level7Low = 15                                           -- Lowest bonus amount at "Driving" XP level 7.
+Config.Level7High = 24                                          -- Highest bonus amount at "Driving" XP level 7.
+--Level 8
+Config.Level8Low = 18                                           -- Lowest bonus amount at "Driving" XP level 8.
+Config.Level8High = 30                                          -- Highest bonus amount at "Driving" XP level 8.
+
+Config.BossCoords = vector4(538.35, 101.8, 95.54, 164.05)       -- Location of the Boss where player gets the job. The Blip also uses these coords.
+
+Config.VehicleSpawn = vector4(535.3, 95.58, 96.32, 159.15)      -- Where the delivery vehicle will spawn.
 
 Config.Vehicle = "surge"
 
-Config.VehicleSpawn = vector4(535.3, 95.58, 96.32, 159.15)
-
-Config.FuelScript = 'cdn-fuel'
+Config.FuelScript = 'ps-fuel'
 
 Config.JobLocs = { -- Random delivery houses.
     vector3(224.11, 513.52, 140.92),

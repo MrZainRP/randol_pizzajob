@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Randolio | MrEvilGamer'
+author 'Randolio | MrEvilGamer | Mr_Zain'
 description 'Reworked Pizza Job for QBCore.'
 
 shared_scripts {

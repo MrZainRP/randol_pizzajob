@@ -2,7 +2,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterServerEvent('randol_pizzajob:server:Payment', function(jobsDone)
 	local src = source
-    local payment = Config.Payment * jobsDone
+    local payment = math.random(Config.PaymentLow, Config.PaymentHigh) * jobsDone
 	local Player = QBCore.Functions.GetPlayer(source)
     jobsDone = tonumber(jobsDone)
     if jobsDone > 0 then

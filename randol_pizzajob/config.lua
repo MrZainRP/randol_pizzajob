@@ -15,7 +15,7 @@ Config.DriverXPlow = 1                                          -- Lowest amount
 Config.DriverXPhigh = 2                                         -- Highest amount of "Driving" XP awarded to player for delivering pizza.
 
 Config.PaymentLow = 105                                         -- Lowest amount paid per delivery. (Need to return the vehicle safely to the shop to get paid).
-Config.PaymentLow = 175                                         -- Highest amount paid per delivery. (Need to return the vehicle safely to the shop to get paid).
+Config.PaymentHigh = 175                                         -- Highest amount paid per delivery. (Need to return the vehicle safely to the shop to get paid).
 
 --------------------
 --BONUS/TIP PAYOUT--
